@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import DataEntryForm from './pages/page';
 import './index.css'
-import Overview from './pages/OverviewDashboard';
+import Overview from './pages/Overview';
 
 const App: React.FC = () => {
   return (

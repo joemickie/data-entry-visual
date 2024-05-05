@@ -258,5 +258,7 @@ align-self: stretch;
   padding: 1rem;
   align-items: center;
   margin-top: 0.5rem;
+  border: 1px solid;
+  border-color: black;
   
 }
