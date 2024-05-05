@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Box, FormControl, FormLabel, Input, Select, Button, SelectField } from "@chakra-ui/react";
 import { fetchProductCategories, submitOrder } from "../api/api";
+import { NavLink } from 'react-router-dom';
+
 
 interface Category {
   id: string;
@@ -60,6 +62,13 @@ const DataEntryForm: React.FC = () => {
       setError("Failed to submit order");
     }
   };
+
+  const [activePage, setActivePage] = React.useState(""); // State to track active page
+
+    // Function to handle navigation click and update active page
+    const handleNavigation = (path: string) => {
+        setActivePage(path);
+    };
 
   return (
     <Box
@@ -133,6 +142,9 @@ const DataEntryForm: React.FC = () => {
         >
           Submit
         </Button>
+        <NavLink to="/dashboard" onClick={() => handleNavigation("dashboard")} className="flex relative flex-col  text-xs text-center text-gray-500 whitespace-nowrap font-[450] ">
+          <div className="gap-0 slashed-zero text-end">AdminDashboard</div>
+        </NavLink>
       </form>
     </Box>
   );
