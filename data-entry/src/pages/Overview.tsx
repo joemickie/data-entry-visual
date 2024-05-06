@@ -13,16 +13,16 @@ const Overview: FunctionComponent = () => {
   const datas = [
     { name: 'Jan', revenue: 10000 },
     { name: 'Feb', revenue: 15000 },
-    { name: 'Mar', revenue: 20000 },
-    { name: 'Apr', revenue: 18000 },
+    { name: 'Mar', revenue: 8000 },
+    { name: 'Apr', revenue: 12000 },
     { name: 'May', revenue: 22000 },
-    { name: 'Jun', revenue: 25000 },
-    { name: 'Jul', revenue: 28000 },
-    { name: 'Aug', revenue: 26000 },
-    { name: 'Sep', revenue: 30000 },
-    { name: 'Oct', revenue: 32000 },
-    { name: 'Nov', revenue: 34000 },
-    { name: 'Dec', revenue: 36000 },
+    { name: 'Jun', revenue: 5000 },
+    { name: 'Jul', revenue: 15000 },
+    { name: 'Aug', revenue: 12000 },
+    { name: 'Sep', revenue: 35000 },
+    { name: 'Oct', revenue: 18000 },
+    { name: 'Nov', revenue: 14000 },
+    { name: 'Dec', revenue: 24000 },
   ];
 
   const data = [
